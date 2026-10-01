@@ -27,7 +27,7 @@
 
     --cinza-claro-fundo: #F3F4F6;
     --cinza-escuro-texto: #1F2937;
-    --off-white: #F2F1EF;
+    --Fundo-header: #F2F1EF;
 
 
     /* =========================
@@ -177,14 +177,6 @@ footer .info {
     justify-content: space-between;
     
 }
-.dropdown-menu {
-    display: none;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 
 .info li {
     margin: var(--sm);
@@ -267,3 +259,69 @@ input[type="submit"]:active {
 input.erro {
     border: 2px solid var(--rosa);
 }
+
+.btn-cor {
+     background: no-repeat;
+    border: navajowhite;
+    color: #3c46cb;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+     /* ======================= MODO ESCURO/ CLARO ======================= */
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    
+    .modo-cor {
+        background-color: #1F2937;
+        color: #F2F1EF;
+    }
+    .modo-cor header {
+        background-color: #1f2937;
+
+    }
+    .modo-cor header h1 {
+        color: #F2F1EF;
+    }
+    .modo-cor header p {
+        color: #F2F1EF;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    
+    body {
+        background-color: #1F2937;
+        color: #F2F1EF;
+    }
+    body header {
+        background-color: #1f2937;
+
+    }
+    body header h1 {
+        color: #F2F1EF;
+    }
+    body header p {
+        color: #F2F1EF;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+         background-color: var(--cinza-claro-fundo);
+         color: var(--cinza-escuro-texto);
+    }
+    body header {
+        background-color: var(--Fundo-header);
+    }
+    body header h1 {
+        color: var(--roxo);
+    }
+    body header p {
+        color: var(--cinza-escuro-texto);
+    }
+} 
